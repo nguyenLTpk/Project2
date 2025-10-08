@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.5.6</version>  <!-- Latest stable tính đến tháng 9/2025 :contentReference[oaicite:0]{index=0} -->
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+
+  <groupId>com.yourcompany</groupId>
+  <artifactId>your-project-name</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Your Project Name</name>
+  <description>Demo Spring Boot project</description>
+
+  <properties>
+    <java.version>17</java.version>  <!-- Spring Boot 3.x yêu cầu tối thiểu Java 17 :contentReference[oaicite:1]{index=1} -->
+  </properties>
+
+  <dependencies>
+    <!-- Starter cho Web (REST API) -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.modelmapper</groupId>
+      <artifactId>modelmapper</artifactId>
+      <version>3.1.1</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
